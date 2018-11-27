@@ -1,0 +1,54 @@
+
+import junit.framework.TestCase;
+import static org.junit.Assert.*;
+import org.junit.*;
+
+
+public class junit_t extends TestCase {
+
+	public Calculations Calculations;
+  public frame1 frame1;
+
+  /**
+  */
+  @Before
+
+  public void testinit() {
+  /**
+  */
+
+
+
+
+  }
+
+  @Test
+
+
+  public void test() {
+  /**
+  */
+	  double Flat_Size =  1;
+	  double Hot_Water = 1;
+	  double Cold_Water = 1;
+	  double Gas_Flat = 1;
+	  double Electricity = 1;
+
+
+  double summary_expected = 210.36;
+  /**
+  */
+  double summary_actual = Calculations.getPrice_Flat(Flat_Size, Hot_Water, Cold_Water, Gas_Flat, Electricity);
+
+  assertEquals(summary_expected,summary_actual);
+  }
+
+
+  @After
+
+  public void teststop(){
+  /**
+  */
+frame1 = null;
+  }
+}

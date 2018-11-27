@@ -1,0 +1,80 @@
+
+
+import junit.framework.TestCase;
+
+/**
+* Импортируем все классы из пакета для проверки тестовой логики, 
+* проверки результатов расчета
+*/
+
+import static org.junit.Assert.*;
+
+/**
+ * Импортируем все классы из пакета проведения для тестирования
+ */
+
+import org.junit.*;
+
+/**
+* Создаем класс для тестирования расчета 
+* коммунальных услуг
+*/
+
+public class junit_h extends TestCase {
+
+	public Calculations Calculations;
+	
+	/**
+	* Инициализируем экземпляр класса для тестирования
+	*/
+	
+  public frame1 frame1;
+
+  /**
+  * Аннотация, указывающая на метод, который будет выполняться перед каждым
+  * запуском теста
+  */
+
+  @Before
+
+  /**
+  * Создаем метод, который будет выполняться перед каждым запуском теста;
+  * в нем устанавливаем входные параметры для тестирования.
+  */
+  // public void testinit() {
+  /**
+  */
+
+
+ //  }
+
+  @Test
+
+
+  public void test() {
+  /**
+  */
+	  double Hot_Water = 1;
+	  double Cold_Water = 1;
+	  double Electricity = 1;
+	  double Gas_House =1;
+
+
+
+  double summary_expected = 5018.97;
+  /**
+  */
+  double summary_actual = Calculations.getPrice_House(Cold_Water, Gas_House, Electricity);
+
+  assertEquals(summary_expected,summary_actual);
+  }
+
+
+  @After
+
+  public void teststop(){
+  /**
+  */
+frame1 = null;
+  }
+}

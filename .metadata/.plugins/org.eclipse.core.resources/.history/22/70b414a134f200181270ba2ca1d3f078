@@ -1,0 +1,69 @@
+
+import junit.framework.TestCase;
+//import static org.junit.Assert.*;
+import org.junit.*;
+
+
+public class junit_t extends TestCase {
+
+
+  public frame1 frame1;
+  /**
+
+  */
+  public void testinit() {
+  /**
+  */
+frame1 = new frame1();
+  /**
+  */
+frame1.rdbtnNewRadioButton.setSelected(true);
+  /**
+  */
+frame1.textField.setText("43"); //горячая вода
+
+  /**
+  */
+frame1.textField_1.setText("5"); //холодная вода
+  /**
+  */
+frame1.textField_2.setText("5"); //газ
+  /**
+  */
+frame1.textField_3.setText("110"); //электричество
+  /**
+  */
+frame1.textField_4.setText("8"); //площадь кв.м. 
+  /**
+  */
+// frame1.textField_5.setText("100"); // тыс куб .м. 
+  /**
+  */
+//frame1.textField_8.setText("50"); //итого
+
+  }
+
+  public void test() {
+  /**
+  */
+frame1.btnNewButton.doClick();
+  /**
+  */
+  double summary_expected = 6826.63;
+  /**
+  */
+  double summary_actual = Double.parseDouble(frame1.textField_8.getText());
+  /**
+  */
+  assertEquals(summary_expected,summary_actual);
+  }
+  /**
+  */
+  /**
+  */
+  public void teststop(){
+  /**
+  */
+frame1 = null;
+  }
+}
