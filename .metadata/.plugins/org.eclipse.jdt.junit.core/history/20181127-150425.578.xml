@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="test_junit_house" project="root2din" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="test_junit_house" time="0.0">
-    <testcase name="testinit" classname="test_junit_house" time="0.0"/>
-    <testcase name="teststop" classname="test_junit_house" time="0.0"/>
-    <testcase name="test" classname="test_junit_house" time="0.0"/>
-  </testsuite>
-</testrun>
