@@ -24,5 +24,14 @@ public class Calculations {
             	kommunalka = Math.rint(100.0*kommunalka)/100.0;
             	return (kommunalka);
 			}
+	// метод, возвращающий значение kommunalka для частного дома
 
+            public static double getPrice_House (double Cold_Water, double Gas_House,double Electricity) {
+            	//объявляем kommunalka
+            	double kommunalka1 = 0;
+            	//объявляем формула расчета для частного дома
+            	kommunalka1 =  Cold_Water*Tarif_Cold_Water + Gas_House*Tarif_Gas_House + Electricity*Tarif_Electricity;
+            	kommunalka1 = Math.rint(100.0*kommunalka1)/100.0;
+            	return (kommunalka1);
+			}
 }
