@@ -60,18 +60,18 @@ public class junit_t extends TestCase {
 
 	  */
 
-	  double Flat_Size =  1;
-	  double Hot_Water = 1;
-	  double Cold_Water = 1;
-	  double Gas_Flat = 1;
-	  double Electricity = 1;
+	  double Flat_Size =  40;
+	  double Hot_Water = 4;
+	  double Cold_Water = 6;
+	  double Gas_Flat = 8;
+	  double Electricity = 80;
 	  /**
-		  * Присваиваем переменной значение 210.36
-		  * (верный/ожидаемый результат расчета коммунальных услуг = 210.36)
+		  * Присваиваем переменной значение 2469.02
+		  * (верный/ожидаемый результат расчета коммунальных услуг =  2469.02)
 		  */
 
 
-  double summary_expected = 210.36;
+  double summary_expected =  2469.02;
   /**
 
   * Присваиваем переменной значени
